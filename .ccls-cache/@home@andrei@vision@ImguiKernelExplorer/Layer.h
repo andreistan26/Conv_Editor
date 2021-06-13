@@ -20,10 +20,11 @@ public:
     // void on_quit_event_loop();
     ImGuiIO _io;
 private:
-    ImVec4 _background;
-    int _height, _width;
     std::string _window_title;
+    int _width;
+    int _height;
     std::string _glsl_version;
+    ImVec4 _background;
     // bool _end;
     bool _use_dark_colors;
     SDL_Window* _window;
