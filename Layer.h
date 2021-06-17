@@ -11,11 +11,12 @@ class Layer
 public:
     Layer(std::string window_title, int height, int width, std::string glsl_version);
     ~Layer();
-    void init_imgui(ImGuiIO& io);
+    void init_imgui();
     void on_new_frame();
     void render_layer(ImGuiIO& io);
     inline ImVec4* get_background();
     SDL_Window* get_window();
+    SDL_GLContext* get_gl_context();
 private: 
     std::string _window_title;
     int _width;
